@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     
+    <style>
+        body{
+            background-color: aliceblue;
+            font-family: Roboto;
+            text-align: justify;
+
+        }
+        .category {
+            position: relative;
+            text-align: center
+            margin-bottom: 20px;
+        }
+
+        .category img {
+            width: 100%;
+            height: auto;
+            transition: transform 1s;
+            /* transform-style:preserve-3d; */
+        }
+
+        .category p {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .category:hover img {
+            transform: rotatey(180deg);
+            transition: 1s;
+        }
+
+        .category:hover p {
+            opacity: 1;
+        }
+
+        h1 {
+            padding: 15px;
+            color: red;
+        }
+
+        p {
+            color: red;
+        }
+
+        .card {
+            position: relative;
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .card:hover .card-img-overlay {
+            opacity: 1;
+        }
+        .text-red {
+            color: #ff0000; /* Red text color */
+        }
+        .bg-dark-custom {
+            background-color: #000; /* Black background for navbar and footer */
+        }
+        .mtop{
+            margin-top: 100px;
+        }
+        .copyrights{
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body style="color: black;">
+
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom fixed-top p-3">
+            <div class="container-fluid">
+                <div> 
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.jpg" alt="" width="80px">
+                    </a>
+                </div>
+                <a class="navbar-brand text-red" href="#"> <h1 class="px-5">Red <span class="text-light">Gym</span> </h1> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-red active" aria-current="page" href="#one">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-red" href="ifit.html">Ifit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-red" href="subscription.html">Subscription</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-red" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-red" href="index.html">Contact</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link text-red" href="registration.html"><button class="btn btn-outline-danger text-light px-3">SignUp/Login</button></a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+    <div class="container-fluid mtop">
+        <div class="row">
+            <img src="images/Screenshot 2024-08-29 230035.png" alt="" class="rounded-5">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 category">
+                <h1>HIIT Training</h1>
+                <div class="card border-0 background-0">
+                    <img src="images/ifit 1.png" alt="HIIT Training" class="rounded-5">
+                    <div class="card-img-overlay">
+                        <p>High Intensity Interval Training with variations in workouts focuses on different aspects of
+                            fitness i.e. strength, stamina, endurance, and agility. Each class is designed based on the
+                            format that is scientifically.....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category">
+                <h1>Looping ™</h1>
+                <div class="card border-0">
+                    <img src="images/ifit 2.png" alt="Looping" class="rounded-5">
+                    <div class="card-img-overlay">
+                        <p>Looping TM enhances muscular endurance, and can be done with minimal equipment, making it
+                            accessible. Incorporating it into your workout routine helps achieve progressive and diverse
+                            fitness goals</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category">
+                <h1>Endurance Training</h1>
+                <div class="card border-0">
+                    <img src="images/ifit 3.png" alt="Endurance Training" class="rounded-5">
+                    <div class="card-img-overlay">
+                        <p>Endurance training increases the body's capacity to transport oxygen to muscles. Whether
+                            you're a
+                            competitive athlete or simply looking to improve your stamina, training is essential for
+                            achieving better physical health and increased energy levels.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category">
+                <h1>MMA</h1>
+                <div class="card border-0">
+                    <img src="images/ifit 4.png" alt="MMA" class="rounded-5">
+                    <div class="card-img-overlay">
+                        <p>MMA (Mixed Martial Arts) training enhances physical conditioning, agility, and flexibility,
+                            promoting overall health. It also teaches valuable self-defense skills, boosting confidence
+                            and
+                            personal safety.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category">
+                <h1>Boxing</h1>
+                <div class="card border-0">
+                    <img src="images/ifit 5.png" alt="Boxing" class="rounded-5">
+                    <div class="card-img-overlay">
+                        <p>Gym boxing training improves cardiovascular fitness, strength, and endurance. Boxing is an
+                            excellent stress reliever, allowing individuals to release pent-up tension and frustrations
+                            in a
+                            controlled environment. The training offers a well-rounded approach to fitness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category">
+                <h1>Strength Training</h1>
+                <div class="card border-0">
+                    <img src="images/ifit 6.png" alt="Strength Training" class="rounded-5">
+                    <div class="card-img-overlay">
+                        <p>Strength training is a cornerstone of physical fitness, contributing to muscle development,
+                            increased bone density, and improved metabolism. It can lead to better athletic performance
+                            and
+                            daily functional abilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category">
+                <h1>Calisthenics</h1>
+                <div class="card border-0">
+                    <img src="images/ifit 7.png" alt="Calisthenics" class="rounded-5">
+                    <div class="card-img-overlay">
+                        <p>Calisthenics is a fundamental component of gym training with immense importance. It relies on
+                            bodyweight exercises to improve strength, flexibility, and overall fitness. Calisthenics
+                            exercises like push-ups, pull-ups, and bodyweight squats are accessible to individuals of
+                            all
+                            fitness levels.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category">
+                <h1>Yoga</h1>
+                <div class="card border-0">
+                    <img src="images/ifit 8.png" alt="Yoga" class="rounded-5">
+                    <div class="card-img-overlay">
+                        <p>Yoga complements traditional workouts by improving flexibility, balance, and mobility, which
+                            are
+                            essential for overall fitness and injury prevention. Yoga also enhances mental well-being,
+                            reducing stress and promoting mindfulness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 category">
+                <h1>Dance</h1>
+                <div class="card border-0">
+                    <img src="images/ifit 9.png" alt="Dance Based Routines" class="rounded-5">
+                    <div class="card-img-overlay">
+                        <p>Incorporating dance-based routines adds an exciting dimension to workouts. These routines not
+                            only improve cardiovascular fitness and coordination but also make exercise enjoyable.
+                            Dancing
+                            engages various muscle groups, promoting overall toning and strength development while
+                            enhancing
+                            flexibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-light bg-dark-custom py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-red mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none d-block mb-2">Home</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none d-block mb-2">About Us</a></li>
+                        <li><a href="#services" class="text-light text-decoration-none d-block mb-2">Services</a></li>
+                        <li><a href="subscription.html" class="text-light text-decoration-none d-block mb-2">Subscription</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none d-block mb-2">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-red mb-3">Programs</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="subscription.html" class="text-light text-decoration-none d-block mb-2">Personal Training</a></li>
+                        <li><a href="subscription.html" class="text-light text-decoration-none d-block mb-2">Group Classes</a></li>
+                        <li><a href="subscription.html" class="text-light text-decoration-none d-block mb-2">Nutrition Advice</a></li>
+                        <li><a href="ifit.html" class="text-light text-decoration-none d-block mb-2">Ifit</a></li>
+                        <li><a href="#BMI" class="text-light text-decoration-none d-block mb-2">BMI Calculator</a></li>
+                    </ul>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-red mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="subscription.html" class="text-light text-decoration-none d-block mb-2">Privacy Policy</a></li>
+                        <li><a href="subscription.html" class="text-light text-decoration-none d-block mb-2">Terms of Service</a></li>
+                        <li><a href="subscription.html" class="text-light text-decoration-none d-block mb-2">FAQ</a></li>
+                        <li><a href="subscription.html" class="text-light text-decoration-none d-block mb-2">Careers</a></li>
+                        <li><a href="subscription.html" class="text-light text-decoration-none d-block mb-2">Events</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-red mb-3">Follow Us</h5>
+                    <ul class="list-unstyled d-flex flex-wrap">
+                        <li class="me-3 mb-3">
+                            <a href="subscription.html" class="text-light text-decoration-none" target="_blank">
+                                <i class="fab fa-facebook-f fa-lg"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="me-3 mb-3">
+                            <a href="subscription.html" class="text-light text-decoration-none" target="_blank">
+                                <i class="fab fa-instagram fa-lg"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="me-3 mb-3">
+                            <a href="subscription.html" class="text-light text-decoration-none" target="_blank">
+                                <i class="fab fa-twitter fa-lg"></i> Twitter
+                            </a>
+                        </li>
+                        <li class="me-3 mb-3">
+                            <a href="subscription.html" class="text-light text-decoration-none" target="_blank">
+                                <i class="fab fa-linkedin-in fa-lg"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li class="me-3 mb-3">
+                            <a href="subscription.html" class="text-light text-decoration-none" target="_blank">
+                                <i class="fab fa-youtube fa-lg"></i> YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center py-3 border-top border-light">
+                <p class="mb-0 copyrights">&copy; 2024 Red Gym. All Rights Reserved By Niranjan and Team.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

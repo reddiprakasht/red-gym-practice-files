@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.heading{
+  color: aqua;
+}
+
+body {
+  /* Space for the fixed navbar */
+  background-color: #f4f4f4; /* Light grey background for contrast */
+  font-family: Roboto;
+  text-align: justify;
+}
+.hero {
+  background: url('images/Jason-Statham-Diet-and-Workout-Plan-1.jpg') no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.5rem;
+}
+.section {
+  padding: 60px 0;
+}
+.bg-dark-custom {
+  background-color: white; /* Black background for navbar and footer */
+}
+.text-red {
+  color: red; /* Red text color */
+
+}
+.card {
+  border: 1px solid #ff0000; /* Red border for cards */
+  border-radius: 0.75rem;
+}
+.card-title {
+  color: #ff0000; /* Red title for cards */
+}
+.footer {
+  background-color: #000; /* Black footer */
+  color: #fff; /* White text color in footer */
+}
+.footer a {
+  color: #fff; /* Default color for footer links */
+  text-decoration: none; /* Remove underline */
+}
+.footer a:hover {
+  color: #ff0000; /* Red color on hover */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+.copyrights{
+  color: #ff0000;
+}
+

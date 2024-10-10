@@ -1,0 +1,61 @@
+body {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    background-image: url('images/pexels-scottwebb-28080.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keep background fixed */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 500px; /* Maximum width for larger screens */
+    border-radius: 8px;
+    padding: 2rem; /* Adjusted padding for responsiveness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(139, 138, 138);
+    position: relative;
+    margin: auto; /* Center horizontally */
+    margin-top: 5rem; /* Add margin from top */
+    opacity: 0.9; /* Adjusted opacity for better readability */
+    backdrop-filter: blur(10px); /* Adjusted blur for readability */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.login-box h2 {
+    color: #ffffff; /* White text for the heading */
+    text-align: center;
+    margin-bottom: 1.5rem; /* Space below heading */
+}
+
+.form-group label {
+    color: #ffffff; /* White text for labels */
+}
+
+.btn-primary {
+    background-color: #c0392b; /* Darker red for the button */
+    border-color: #c0392b;
+}
+
+.btn-primary:hover {
+    background-color: #a32e21; /* Even darker red for hover effect */
+    border-color: #a32e21;
+}
+
+a {
+    color: #ffffff; /* White text for links */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.from_bg {
+    opacity: 0.9; /* Adjusted opacity for input fields */
+}
+
+.text-red {
+    color: #ff0000; /* Red text color */
+}
